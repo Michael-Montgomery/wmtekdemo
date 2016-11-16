@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*Styling for unicersal header*/
+
+
+.universal-header {
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 80px;
+}
+
+header nav {
+    text-align: right;
+    line-height: 80px;
+}
+
+header nav a {
+    margin-left: 3%;
+    color: white;
+    font-size: 1.2em;
+}
+
+header nav a:last-child {
+    margin-right: 2%;
+}
+
+header nav a img {
+    float: left;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 2%;
+}
+
+
+
+/*Welcome Page Styling*/
+
+
+.welcome-wrapper-one {
+    height: 600px;
+    background-color: antiquewhite;
+}
+
+.random-wrapper {
+    height: 50px;
+}
+
+.tri-wrapper {
+    height: 600px;
+    padding: 0;
+}
+
+.tri-div {
+    height: 100%;
+    width: 33%;
+    border: 1px dotted;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    padding: 0;
+}
+
+.tri-div h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 60px;
+    font-size: 3em;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.tri-div span {
+    display: none;
+}
+
+.tri-div p {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 20%;
+}
+
+.tri-div div {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+#tri-div-three {
+
+}

@@ -16,3 +16,10 @@ app.config(function($routeProvider) {
         redirectTo: '/welcome'
     })
 });
+
+app.controller('mainCtrl', function($scope) {
+    $('.universal-header').hide();
+    setTimeout(function() {
+        $('.universal-header').slideDown('slow');
+    }, 500)
+})

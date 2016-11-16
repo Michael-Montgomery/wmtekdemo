@@ -9,18 +9,25 @@
     <!--Native stylesheet reference-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body ng-app="wmtek">
+<body ng-app="wmtek" ng-controller="mainCtrl">
 
-<nav>
-    <a href="#/welcome">home</a>
-    <a href="#/sitestacker">home</a>
-    <a href="#/services">home</a>
-    <a href="#/ourwork">home</a>
-    <a href="#/contact">home</a>
-    <a href="#/company">home</a>
-    <a href="#/blog">home</a>
-</nav>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 universal-header">
+            <header>
+               <nav>
+                   <a href="#/welcome"><img src="../images/white-logo-white.png"></a>
+                   <a href="#/sitestacker">Site Stacker</a>
+                   <a href="#/company">Company</a>
+                   <a href="#/services">Services</a>
+                   <a href="#ourwork">Our Work</a>
+                   <a href="#/blog">blog</a>
+                   <a href="#/contact">contact</a>
+               </nav>
+            </header>
+        </div>
+    </div>
+</div>
 
 <ng-view></ng-view>
 
