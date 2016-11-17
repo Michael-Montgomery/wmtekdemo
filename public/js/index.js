@@ -6,7 +6,9 @@ var app = angular.module('wmtek', [
     'wmtek.services',
     'wmtek.ourwork',
     'wmtek.blog',
-    'wmtek.contact'
+    'wmtek.contact',
+    //services
+    'testimony.svc'
 ]);
 
 app.config(function($routeProvider) {

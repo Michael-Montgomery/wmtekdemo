@@ -54,12 +54,14 @@ header nav a img {
 .tri-wrapper {
     height: 600px;
     padding: 0;
+    background-color: black;
 }
 
 .tri-div {
     height: 100%;
     width: 33%;
-    border: 1px dotted;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
     display: inline-block;
     vertical-align: top;
     -webkit-transition: width 2s;
@@ -85,6 +87,8 @@ header nav a img {
     text-align: center;
     font-size: 1.4em;
     margin-top: 20%;
+    display: none;
+    color: white;
 }
 
 .tri-div div {
@@ -92,6 +96,39 @@ header nav a img {
     margin: auto;
     padding: 30px;
 }
-#tri-div-three {
 
+#tri-div-one {
+    background-image: url("http://thresholdministries.ca/wp-content/uploads/2016/10/6359516490426870581342489687_lightstock_93001_max_james.jpg");
+    background-size: cover;
+}
+
+#tri-div-two {
+    background-image: url("http://www.losangelesentertainmentgroup.com/wp-content/uploads/2016/01/business.jpg");
+    background-size: cover;
+}
+#tri-div-three {
+    background-image: url("https://www.bigquestionsonline.com/wp-content/uploads/2013/07/Communication-Technology-Civility-990x580.jpg");
+    background-size: cover;
+}
+
+.testimonial-wrapper {
+    height: 300px;
+    border: 1px dotted;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.testimony {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 2.3em;
+}
+
+#testimony-author {
+    font-size: .5em;
+}
+
+.welcome-icon-wrapper {
+    height: 80px;
+    border: 1px dotted;
 }

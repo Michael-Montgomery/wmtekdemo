@@ -1,4 +1,4 @@
-var app = angular.module('wmtek.welcome', []);
+var app = angular.module('wmtek.welcome', ['testimony.svc']);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/welcome', {
@@ -7,7 +7,7 @@ app.config(function($routeProvider) {
     })
 });
 
-app.controller('welcomeController', function($scope) {
+app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-one').mouseover(function() {
         $('#tri-div-one').css('width', '80%');
         $('#tri-div-one h2').css('width', '50%');
@@ -48,5 +48,16 @@ app.controller('welcomeController', function($scope) {
     $('.tri-wrapper').mouseleave(function() {
         $('.tri-div').css('width', '33%');
         $('.tri-div p').fadeOut();
-    })
+    });
+    setInterval(function() {
+        var holder = testimonyFuncs.returnNextReview();
+        $('.testimony, .testimony-author').fadeOut('slow');
+
+        setTimeout(function () {
+            $('.testimony').html(holder.testimony);
+            $('#testimony-author').html(holder.author);
+            $('.testimony, .testimony-author').fadeIn('slow');
+        }, 1000)
+
+    }, 10000);
 });
