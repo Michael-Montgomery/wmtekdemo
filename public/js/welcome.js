@@ -70,4 +70,6 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-three').click(function() {
         window.location.assign('#/sitestacker')
     });
+
+
 });
