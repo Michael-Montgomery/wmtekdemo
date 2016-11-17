@@ -12,9 +12,9 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
         $('#tri-div-one').css('width', '80%');
         $('#tri-div-one h2').css('width', '50%');
         $('#tri-div-one span').fadeIn();
-        $('#tri-div-one p').fadeIn('slow');
+        $('#tri-div-one p, #tri-div-one button').fadeIn('slow');
         $('#tri-div-two, #tri-div-three').css('width', '9%');
-        $('#tri-div-two p, #tri-div-three p').fadeOut();
+        $('#tri-div-two p, #tri-div-three p, #tri-div-two button, #tri-div-three button').fadeOut();
     });
     $('#tri-div-one').mouseleave(function() {
         $('#tri-div-one h2').css('width', '40px');
@@ -24,9 +24,9 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
         $('#tri-div-two').css('width', '80%');
         $('#tri-div-two h2').css('width', '50%');
         $('#tri-div-two span').fadeIn();
-        $('#tri-div-two p').fadeIn('slow');
+        $('#tri-div-two p, #tri-div-two button').fadeIn('slow');
         $('#tri-div-one, #tri-div-three').css('width', '9%');
-        $('#tri-div-three p, #tri-div-one p').fadeOut();
+        $('#tri-div-three p, #tri-div-one p, #tri-div-three button, #tri-div-one button').fadeOut();
     });
     $('#tri-div-two').mouseleave(function() {
         $('#tri-div-two h2').css('width', '40px');
@@ -36,9 +36,9 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
         $('#tri-div-three').css('width', '80%');
         $('#tri-div-three h2').css('width', '50%');
         $('#tri-div-three span').fadeIn();
-        $('#tri-div-three p').fadeIn('slow');
-        $('#tri-div-two, #tri-div-one').css('width', '9%');;
-        $('#tri-div-two p, #tri-div-one p').fadeOut();
+        $('#tri-div-three p, #tri-div-three button').fadeIn('slow');
+        $('#tri-div-two, #tri-div-one').css('width', '9%');
+        $('#tri-div-two p, #tri-div-one p, #tri-div-two button, #tri-div-one button').fadeOut();
 
     });
     $('#tri-div-three').mouseleave(function() {
@@ -47,7 +47,7 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     })
     $('.tri-wrapper').mouseleave(function() {
         $('.tri-div').css('width', '33%');
-        $('.tri-div p').fadeOut();
+        $('.tri-div p, .tri-div button').fadeOut();
     });
     setInterval(function() {
         var holder = testimonyFuncs.returnNextReview();
@@ -60,4 +60,14 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
         }, 1000)
 
     }, 10000);
+
+    $('#tri-div-one').click(function() {
+        window.location.assign('#/company');
+    });
+    $('#tri-div-two').click(function() {
+        window.location.assign('#/ourwork');
+    });
+    $('#tri-div-three').click(function() {
+        window.location.assign('#/sitestacker')
+    });
 });

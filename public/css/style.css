@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-/*Styling for unicersal header*/
+/*Styling for universal header*/
 
 
 .universal-header {
@@ -39,6 +39,32 @@ header nav a img {
 
 
 
+/*Styling for universal footer*/
+.footer-div {
+    height: 300px;
+    background-color: black;
+}
+
+
+#contact-list {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+
+}
+
+#contact-list li {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+.footer-font {
+    color: yellow;
+}
+
+
 /*Welcome Page Styling*/
 
 
@@ -67,6 +93,7 @@ header nav a img {
     -webkit-transition: width 2s;
     transition: width 2s;
     padding: 0;
+    overflow: hidden;
 }
 
 .tri-div h2 {
@@ -89,6 +116,7 @@ header nav a img {
     margin-top: 20%;
     display: none;
     color: white;
+    text-shadow: 1px 0 0 #D8D8D8, 0 -1px 0 #D8D8D8, 0 1px 0 #D8D8D8, -1px 0 0 #D8D8D8;
 }
 
 .tri-div div {
@@ -97,6 +125,31 @@ header nav a img {
     padding: 30px;
 }
 
+.tri-div-button-wrapper {
+    text-align: center;
+}
+.tri-div-button {
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    opacity: .5;
+    font-size: 2em;
+    border-radius: 8px;
+    -webkit-transition: font-size .4s; /* Safari */
+    transition: font-size .4s;
+    display: none;
+}
+
+.tri-div-button:hover {
+    font-size: 2.3em;
+    opacity: .7;
+}
+
+.tri-div-button:active {
+    position: relative;
+    top: 2px;
+}
 #tri-div-one {
     background-image: url("http://thresholdministries.ca/wp-content/uploads/2016/10/6359516490426870581342489687_lightstock_93001_max_james.jpg");
     background-size: cover;
@@ -113,7 +166,7 @@ header nav a img {
 
 .testimonial-wrapper {
     height: 300px;
-    border: 1px dotted;
+
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -129,6 +182,24 @@ header nav a img {
 }
 
 .welcome-icon-wrapper {
-    height: 80px;
+    height: 300px;
     border: 1px dotted;
+}
+
+.logo-div {
+    height: 100px;
+    padding-left: 8%;
+}
+.logo-div img {
+    height: 80%;
+    width: 165px;
+}
+
+#divider {
+    height: 2px;
+    width: 90%;
+    border-bottom: 2px solid;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 50px;
 }
