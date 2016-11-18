@@ -8,6 +8,8 @@ app.config(function($routeProvider) {
 });
 
 app.controller('welcomeController', function($scope, testimonyFuncs) {
+
+
     $('#tri-div-one').mouseover(function() {
         $('#tri-div-one').css('width', '80%');
         $('#tri-div-one h2').css('width', '50%');
@@ -72,7 +74,7 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     });
     $(window).scroll(function() {
        if($(window).scrollTop() == 0) {
-           $('header').css('background-color', 'transparent')
+           $('header').css('background-color', 'black').css('opacity', '.5')
        } else {
            $('header').css('background-color', 'black').css('opacity', '.9');
        }
