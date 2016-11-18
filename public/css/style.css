@@ -11,8 +11,10 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: transparent;
     height: 80px;
+    -webkit-transition: opacity 1.5s;
+    transition: opacity 1.5s;
 }
 
 header nav {
@@ -23,7 +25,15 @@ header nav {
 header nav a {
     margin-left: 3%;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-family: 'Droid Sans', sans-serif;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    color: darkgrey;
 }
 
 header nav a:last-child {
@@ -40,6 +50,8 @@ header nav a img {
 
 
 /*Styling for universal footer*/
+
+
 .footer-div {
     height: 300px;
     background-color: black;
@@ -64,6 +76,7 @@ header nav a img {
     color: white;
     font-size: 2em;
     margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
 #social-list li {
@@ -85,6 +98,7 @@ header nav a img {
     font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Rubik', sans-serif;
 }
 
 #email-form-wrapper input {
@@ -96,9 +110,11 @@ header nav a img {
     outline: none;
     color: white;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 #email-form-wrapper input:hover {
+    color: black;
     background-color: white;
     opacity: .8;
 }
@@ -109,12 +125,35 @@ header nav a img {
     color: black;
 }
 
+#email-form-wrapper button {
+    margin-top: 8px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 4em;
+    visibility: hidden;
+    opacity: .7;
+    font-family: 'Rubik', sans-serif;
+}
+
+#email-form-wrapper button:hover {
+    opacity: 1;
+}
+
+#email-form-wrapper button:active {
+    position: relative;
+    top: 2px;
+}
 /*Welcome Page Styling*/
 
 
 .welcome-wrapper-one {
     height: 600px;
-    background-color: antiquewhite;
+    background-image: url("https://static.pexels.com/photos/115001/pexels-photo-115001.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .random-wrapper {
@@ -131,7 +170,7 @@ header nav a img {
     height: 100%;
     width: 33%;
     border-top: 3px solid;
-    border-bottom: 3px solid;
+    border-bottom: 4px solid black;
     display: inline-block;
     vertical-align: top;
     -webkit-transition: width 2s;
@@ -145,6 +184,7 @@ header nav a img {
     background-color: black;
     color: white;
     width: 60px;
+    font-family: 'Rubik', sans-serif;
     font-size: 3em;
     -webkit-transition: width 2s;
     transition: width 2s;
@@ -152,15 +192,17 @@ header nav a img {
 
 .tri-div span {
     display: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .tri-div p {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin-top: 20%;
     display: none;
     color: white;
     text-shadow: 1px 0 0 #D8D8D8, 0 -1px 0 #D8D8D8, 0 1px 0 #D8D8D8, -1px 0 0 #D8D8D8;
+    font-family: 'Rubik', sans-serif;
 }
 
 .tri-div div {
@@ -180,14 +222,15 @@ header nav a img {
     opacity: .5;
     font-size: 2em;
     border-radius: 8px;
-    -webkit-transition: font-size .4s; /* Safari */
-    transition: font-size .4s;
+    -webkit-transition: font-size .2s; /* Safari */
+    transition: font-size .2s;
     display: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .tri-div-button:hover {
     font-size: 2.3em;
-    opacity: .7;
+    opacity: .6;
 }
 
 .tri-div-button:active {
@@ -219,6 +262,7 @@ header nav a img {
     text-align: center;
     margin-top: 70px;
     font-size: 2.3em;
+    font-family: 'Rubik', sans-serif;
 }
 
 #testimony-author {

@@ -44,4 +44,11 @@ app.controller('mainCtrl', function($scope) {
     }).mouseout(function() {
         $('#contact-list li:last-child').html('<i class="fa fa-envelope-o" aria-hidden="true"></i>')
     })
+    $('#email-form-wrapper input').keydown(function() {
+        if($('#email-form-wrapper input').val().length > 1) {
+            $('#email-form-wrapper button').css('visibility', 'visible');
+        } else {
+            $('#email-form-wrapper button').css('visibility', 'hidden');
+        }
+    })
 })

@@ -19,7 +19,7 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-one').mouseleave(function() {
         $('#tri-div-one h2').css('width', '40px');
         $('#tri-div-one span').fadeOut();
-    })
+    });
     $('#tri-div-two').mouseover(function() {
         $('#tri-div-two').css('width', '80%');
         $('#tri-div-two h2').css('width', '50%');
@@ -31,7 +31,7 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-two').mouseleave(function() {
         $('#tri-div-two h2').css('width', '40px');
         $('#tri-div-two span').fadeOut();
-    })
+    });
     $('#tri-div-three').mouseover(function() {
         $('#tri-div-three').css('width', '80%');
         $('#tri-div-three h2').css('width', '50%');
@@ -44,7 +44,7 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-three').mouseleave(function() {
         $('#tri-div-three h2').css('width', '40px');
         $('#tri-div-three span').fadeOut();
-    })
+    });
     $('.tri-wrapper').mouseleave(function() {
         $('.tri-div').css('width', '33%');
         $('.tri-div p, .tri-div button').fadeOut();
@@ -70,6 +70,13 @@ app.controller('welcomeController', function($scope, testimonyFuncs) {
     $('#tri-div-three').click(function() {
         window.location.assign('#/sitestacker')
     });
+    $(window).scroll(function() {
+       if($(window).scrollTop() == 0) {
+           $('header').css('background-color', 'transparent')
+       } else {
+           $('header').css('background-color', 'black').css('opacity', '.9');
+       }
+    })
 
 
 });
