@@ -2,7 +2,7 @@ var app = angular.module('wmtek.ourwork', []);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/ourwork', {
-        templateUrl: 'templates/ourwork.tpl.html',
+        templateUrl: 'public/views/templates/ourwork.tpl.html',
         controller: 'ourworkController'
     })
 });

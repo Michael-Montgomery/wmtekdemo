@@ -2,7 +2,7 @@ var app = angular.module('wmtek.services', []);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/services', {
-        templateUrl: 'templates/services.tpl.html',
+        templateUrl: 'public/views/templates/services.tpl.html',
         controller: 'servicesController'
     })
 });

@@ -2,7 +2,7 @@ var app = angular.module('wmtek.sitestacker', []);
 
 app.config(function($routeProvider) {
     $routeProvider.when('/sitestacker', {
-        templateUrl: 'templates/sitestacker.tpl.html',
+        templateUrl: 'public/views/templates/sitestacker.tpl.html',
         controller: 'sitestackerController'
     })
 });
